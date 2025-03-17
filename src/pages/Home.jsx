@@ -255,70 +255,25 @@ const Home = () => {
 
   return (
     <>
-      <Sidebar />
-      <div
-        className="w-screen min-h-screen font-poppins transition-all duration-500 ease-in-out"
-        style={{ background: dynamicBgColor }}
-      >
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <div
-          className={`fixed top-0 left-0 w-full h-full bg-gradient-to-br 
-            from-[#F4B57A] 
-            via-[#ff9c59] 
-            to-[#ffa472] 
-            pointer-events-none
-            transition-all duration-500 ease-in-out`}
-        />
-
-        <nav className="fixed top-3 left-6 right-16 z-50" data-aos="fade-down">
-          <div className="w-full max-w-1280 mx-auto px-4 py-3 flex justify-between items-center">
-            <div className="flex items-center text-2xl font-bold text-black hover:text-glow transition-all duration-300">
-              <img
-                src="logo.png"
-                alt="Innovsphere Logo"
-                className="w-10 h-10 mr-3"
-              />
-              InnovSphere
-            </div>
-
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-black focus:outline-none font-medium hover:text-glow transition-all duration-300"
-              >
-                {isMenuOpen ? "Close" : "Menu"}
-              </button>
-            </div>
-          </div>
-
-          {isMenuOpen && (
-            <div className="md:hidden" data-aos="fade-right">
-              <div className="px-4 pt-2 pb-4 space-y-2">
-                <a
-                  href="#home"
-                  className="block text-black hover:text-orange-600 py-2 font-medium hover:text-glow transition-all duration-300"
-                >
-                  Home
-                </a>
-                <a
-                  href="#about"
-                  className="block text-black hover:text-orange-600 py-2 font-medium hover:text-glow transition-all duration-300"
-                >
-                  About
-                </a>
-                <a
-                  href="#services"
-                  className="block text-black hover:text-orange-600 py-2 font-medium hover:text-glow transition-all duration-300"
-                >
-                  Services
-                </a>
+      <div className="min-h-screen bg-gradient-to-br from-[#F4B57A] via-[#ff9c59] to-[#ffa472] flex flex-col">
+        <Sidebar />
+        <div className="flex-grow p-5 font-poppins max-w-5xl mx-auto relative z-10 text-black">
+          <nav
+            className="fixed top-3 left-6 right-16 z-50"
+            data-aos="fade-down"
+          >
+            <div className="w-full max-w-1280 mx-auto px-4 py-3 flex justify-between items-center">
+              <div className="flex items-center text-2xl font-bold text-black hover:text-glow transition-all duration-300">
+                <img
+                  src="logo.png"
+                  alt="Innovsphere Logo"
+                  className="w-10 h-10 mr-3"
+                />
+                InnovSphere
               </div>
             </div>
-          )}
-        </nav>
+          </nav>
+        </div>
 
         <div className="relative z-20 w-screen min-h-screen flex items-center justify-center pt-16">
           <div className="text-center max-w-7xl px-4 pointer-events-auto">
