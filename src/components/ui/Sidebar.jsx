@@ -129,7 +129,7 @@ export function Sidebar() {
       >
         {!isSidebarOpen && (
           <img
-            src="menu.png"
+            src="images/menu.png"
             alt="Menu"
             className="w-10 h-10 opacity-80 hover:opacity-100 transition-opacity duration-300"
             style={{ filter: "none" }}
