@@ -10,7 +10,7 @@ import FocusCards from "../components/ui/FocusCards";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Observer } from "gsap/Observer";
-
+import "../App.css";
 // Register GSAP plugins
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, Observer);
