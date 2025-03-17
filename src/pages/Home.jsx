@@ -11,6 +11,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Observer } from "gsap/Observer";
 import "../App.css";
+
 // Register GSAP plugins
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, Observer);
@@ -328,7 +329,7 @@ const Home = () => {
             </div>
 
             {/* Innovation and Research Text */}
-            <div className="grid grid-cols-3 gap-24 mb-8 lg:gap-32 relative z-30">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-24 mb-8 lg:gap-32 relative z-30">
               <div className="col-span-1">
                 <AnimatedText>Innovation</AnimatedText>
               </div>
@@ -341,9 +342,9 @@ const Home = () => {
             </div>
 
             {/* Separate Paragraphs Below */}
-            <div className="mt-16 text-center grid grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="mt-16 text-center grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
               <div className="col-span-1">
-                <p className="text-black text-center  md:text-xl text-center font-bold">
+                <p className="text-black text-center md:text-xl font-bold">
                   Innovation is at the heart of everything we do. It drives us
                   to create groundbreaking solutions, push boundaries, and
                   deliver cutting-edge technologies that transform industries
@@ -353,7 +354,7 @@ const Home = () => {
               <div className="col-span-1"></div>
               <div className="col-span-1"></div>
               <div className="col-span-1">
-                <p className="text-black text-center  md:text-xl text-center font-bold">
+                <p className="text-black text-center md:text-xl font-bold">
                   Research ensures we stay ahead of the curve. Through rigorous
                   analysis, experimentation, and collaboration, we uncover new
                   possibilities and refine our ideas to achieve excellence in
@@ -419,13 +420,13 @@ const Home = () => {
         </div>
         <div
           ref={projectsSectionRef}
-          className="w-screen  flex flex-col items-center justify-center py-16 relative z-30"
+          className="w-screen flex flex-col items-center justify-center py-16 relative z-30"
           id="projects"
         >
           <div className="text-center mb-16 mt-32" data-aos="fade-down">
             <TypewriterHeading
               text="Project Spotlight !!"
-              className="text-6xl font-bold bg-gradient-to-r from-orange-400 via-orange-600 to-orange-400 bg-clip-text text-transparent mb-4"
+              className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-orange-400 via-orange-600 to-orange-400 bg-clip-text text-transparent mb-4"
             />
           </div>
 
@@ -433,11 +434,7 @@ const Home = () => {
         </div>
       </div>
 
-      <footer
-        className="bg-gradient-to-r  from-[#ffa472] 
-          via-[#ff9c59] 
-          to-[#ffa472] py-16"
-      >
+      <footer className="bg-gradient-to-r from-[#ffa472] via-[#ff9c59] to-[#ffa472] py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h3
             className="text-3xl mb-12 relative inline-block"
@@ -473,7 +470,7 @@ const Home = () => {
               <div className="social-icon youtube">
                 <Youtube className="text-2xl text-white" />
               </div>
-              <span className="social-tooltip">YouTube</span>
+              <span className="social-tooltip">Youtube</span>
             </a>
           </div>
         </div>
