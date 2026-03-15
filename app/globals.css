@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Mozilla+Headline:wght@200..700&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sevillana&family=TASA+Orbiter:wght@400..800&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
+/* Apply default font (optional) */
+body {
+  font-family: 'Mozilla Headline', sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Style for the scroll indicator bar */
+.progress-bar {
+
+  
+  z-index: 100; /* Ensures it's on top of other content */
+  transition: width 0.1s ease-out; /* Optional: adds a slight smoothing effect */
+}
+@keyframes pulse {
+  50% { opacity: 0.5; }
+}
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes scroll-up {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes scroll-down {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
+
+.animate-scroll-up {
+  animation: scroll-up 30s linear infinite;
+}
+
+.animate-scroll-down {
+  animation: scroll-down 30s linear infinite;
+}
+@keyframes scroll-down {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0%); }
+}
+
+.animate-scroll-down {
+  /* Set to 30s or 40s for a cinematic slow crawl like your screenshots */
+  animation: scroll-down 40s linear infinite;
+}
+
+@keyframes scroll-down {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0%); }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 35s linear infinite;
+}
+
+/* Offsets to make columns not look like a single block */
+.animation-delay-2000 {
+  animation-delay: -5s;
+}
+@keyframes scroll-down {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0%); }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 40s linear infinite;
+}
